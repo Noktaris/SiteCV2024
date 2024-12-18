@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+  
+#blocPage{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: black;
+}
+  
+  /* menu de navigation */
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    position:fixed;
+}
+  
+#menuNav ul{
+    list-style-type: none;
+    padding: 0;
+    padding-top: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+}
+  
+  
+  
+#menuListe li{
+    writing-mode: vertical-rl; /* Écriture verticale, de droite à gauche */
+    text-orientation: upright; /* Chaque lettre est orientée correctement */
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+  
+  
+#menuNav a {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex; /* Utilise flexbox pour centrer */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-decoration: none;
+    
+}
+  
+  
+#menuNav a:hover {
+    color: #B2432F;
+    transform: scale(1.1);
+}
+  
+  /* menu de navigation fin*/
+
+
+/* début bloc footer*/
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse ;
+    
+}
+  
+.blocFooter{
+    width: 20%;
+    height: 100%;
+    display: flex ;
+    flex-direction: column;
+    padding: 30px;
+  
+}
+  
+.blocFooter a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+  
+.blocFooter a:hover{
+    color: #B2432F;
+    transform: scale(1.03);
+}
+  /* fin bloc footer*/
+
+/* début bloc content*/
+main{
+    background-color: black;
+    flex: 1;
+    margin-left: 100px;
+    
+  } 
+/* fin bloc content*/
+
+
+
+/* début bloc infoG*/
+
+#infoG{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(49, 46, 46);
+    display: flex;
+}
+
+#infoGauche{
+    background-color: #B2432F;
+    height: 100%;
+    flex: 1;
+
+}
+
+#imageCentrale{
+    background-color: #3ba544;
+    width: 40vw; /* Largeur relative à la taille de l'écran */
+    height: 40vw;
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    border-radius: 50%;
+    background-image: url(images/Draven_48.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center;
+    
+
+}
+
+#infoDroite{
+    background-color:#5C5A4A;
+    height: 100%;
+    flex: 2;
+}
+/* fin bloc infoG*/
+
+/* début bloc Compétences*/
+
+#competence{
+    width: 100%;
+    height: 100vh;
+    background-color: #3f3f3f;
+}
+
+/* fin bloc Compétences*/
+
+
+/* début bloc Parcours*/
+
+#parcours{
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px 50px 0px;
+}
+
+#parcoursDroit{
+    margin-top: 80px;
+    padding-left:20px ;
+    border-left: white solid 1px;
+    height: 70%;
+}
+
+#parcoursGauche{
+    padding-left:20px ;
+    border-left: white solid 1px;
+    height: 65%;
+
+}
+
+
+
+
+/* fin bloc Parcours*/
+
+
+/* début bloc Contact*/
+#interet{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/architecture-1869398_1920.jpg);
+}
+
+/* fin bloc Contact*/

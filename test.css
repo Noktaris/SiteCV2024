@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9e1df; /* Couleur de fond */
+}
+
+.container {
+  position: relative; /* Nécessaire pour positionner le cercle au-dessus */
+  display: flex;
+  height: 30vh; /* Hauteur relative */
+  width: 90%; /* Largeur maximale */
+  max-width: 800px; /* Limite la largeur pour grand écran */
+}
+
+.gray {
+  flex: 1; /* Ajuste automatiquement la largeur */
+  background-color: gray;
+}
+
+.pink {
+  flex: 2; /* Ajuste automatiquement la largeur */
+  background-color: #ff6b6b;
+}
+
+.circle {
+  position: absolute; /* Le cercle est en dehors du flux normal */
+  top: 50%; /* Place le cercle au milieu verticalement */
+  left: 35%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste le positionnement au centre */
+  width: 15vw; /* Largeur relative à l'écran */
+  height: 15vw; /* Hauteur identique pour un cercle parfait */
+  max-width: 200px; /* Taille maximale */
+  max-height: 200px; /* Taille maximale */
+  background-color: #d9d9d9;
+  border-radius: 50%; /* Rend l'élément circulaire */
+}
+
+/* Media Queries pour petits écrans */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Les rectangles s'empilent */
+    height: auto; /* Ajuste automatiquement la hauteur */
+  }
+
+  .gray, .pink {
+    width: 100%; /* Les rectangles occupent toute la largeur */
+    height: 30vh; /* Ajuste leur hauteur */
+  }
+
+  .circle {
+    width: 25vw; /* Cercle plus grand sur mobile */
+    height: 25vw;
+  }
+}
