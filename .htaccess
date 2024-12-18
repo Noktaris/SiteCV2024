@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteBase /
 
 
-RewriteRule ^index.html$/accueil [R=301,L]
-RewriteRule ^cv.html$/cv [R=301,L]
-RewriteRule ^portfolio.html$/projets [R=301,L]
-RewriteRule ^contact.html$/contact [R=301,L]
+RewriteRule ^index.html$ /accueil [L]
+RewriteRule ^cv.html$ /cv [L]
+RewriteRule ^portfolio.html$ /projets [L]
+RewriteRule ^contact.html$ /contact [L]
