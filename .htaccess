@@ -1,7 +1,6 @@
 RewriteEngine On
 RewriteBase /
 
-
 RewriteRule ^index.html$ /accueil [L]
 RewriteRule ^cv.html$ /cv [L]
 RewriteRule ^portfolio.html$ /projets [L]
