@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^index.html$ /accueil [R=301,L]
-RewriteRule ^cv.html$ /cv [R=301,L]
-RewriteRule ^portfolio.html$ /projets [R=301,L]
-RewriteRule ^contact.html$ /contact [R=301,L]
+RewriteRule ^index.html$ accueil [R=301,L]
+RewriteRule ^cv.html$ cv [R=301,L]
+RewriteRule ^portfolio.html$ projets [R=301,L]
+RewriteRule ^contact.html$ contact [R=301,L]
