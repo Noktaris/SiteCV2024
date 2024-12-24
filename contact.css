@@ -19,6 +19,15 @@ body {
     background-color: black;
 }
   
+.menuMobile {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000; /* Définit un contexte d'empilement pour le conteneur */
+  }
   /* menu de navigation */
 header{
     background-color: rgb(255, 255, 255);
@@ -79,8 +88,10 @@ header{
 footer{
     width: 100%;
     height: 150px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%239C92AC' fill-opacity='0.13'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row-reverse ;
     
   }
@@ -108,7 +119,7 @@ footer{
 
 /* début bloc content*/
 main{
-    background-image: url(images/nature-7081138_1920.jpg) ;
+    background-image: url(images/piano-7795476_1920.jpg) ;
     flex: 1;
     margin-left: 100px;
     color: aliceblue;
@@ -188,7 +199,7 @@ form{
 .blocMessage{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -196,7 +207,8 @@ form{
 }
 
 input, textarea{
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     height: 36px;
     border-radius: 25px;
     padding: 10px;
@@ -220,12 +232,13 @@ input:required:invalid:focus {
 
 textarea {
     min-height: 300px;
-    min-width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 20px;
   }
 
 button{
-    width: 120px;
+    width: 20%;
     height: 40px;
     font-size: 1.1rem;
     border-radius: 7px;
@@ -238,3 +251,146 @@ button{
 button:hover{
     background-color: rgba(154, 182, 214, 0.6);
 }
+
+.blocFooter {
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media(max-width: 1440px){
+    form {
+        width: 80%;
+      }
+      button {
+        width: 30%;
+      }
+}
+
+
+
+@media (max-width: 1028px) {
+
+    form {
+        width: 80%;
+        padding: 15px;
+      }
+    
+      h2 {
+        font-size: 3rem;
+        margin-top: 30px;
+      }
+    
+      .ligneA, .ligneB {
+        flex-direction: column;
+        gap: 30px;
+      }
+    
+      .blocNom, .blocPrenom, .blocMail, .blocPhone {
+        width: 100%;
+      }
+    
+      input {
+        max-width: 100%;
+      }
+    
+      .blocMessage {
+        width: 100%;
+      }
+    
+      button {
+        width: 50%;
+      }
+    
+    header {
+      display: none;
+    }
+    
+    
+    main {
+      margin-left: 0;
+    }
+  
+    .menuMobile{
+      display: block;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;  
+    }
+    
+  
+    /* MENU BURGER */
+    #menuNavMobile{
+      height: 100vh;
+      width: 100vw;
+      padding-top: 150px;
+      font-weight: 600;
+      margin: auto;
+      font-size: 3rem;
+      background-color: #000000b7;
+      color: #ffffff;
+      z-index: 9998;
+      position: fixed;
+      top: 0;  
+      left: -100vw;
+      transition: left 0.3s ease;
+    }
+    
+    
+    #menuNavMobile.menuMobileActif{
+      left: 0;
+    }
+    
+    
+    
+    #menuListeMobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none;
+      gap: 20px;
+    }
+    
+    #menuListeMobile a{
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    
+    #menuListeMobile a:hover{
+      color: #B2432F;
+      transform: scale(1.03);
+    }
+    
+    /* Hamburger menu styles */
+    #hamburger {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 35px;
+      position: fixed;
+      z-index: 9999;
+    }
+    
+    .hamburger span {
+      width: 50px;
+      height: 6px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 5px;
+      
+    }
+}
+    /* MENU BURGER fin
+
+  /* Media queries for smaller screens */
+  
+  
+
+  

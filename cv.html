@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV site CV</title>
     <link rel="stylesheet" href="cv.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +16,94 @@
         <header>
             <nav id="menuNav">
                 <ul id="menuListe">
-                    <li><a href="index" class="titresMenu">ACCUEIL</a></li>
-                    <li><a href="cv" class="titresMenu">CV</a></li>
-                    <li><a href="portfolio" class="titresMenu">PORTFOLIO</a></li>
-                    <li><a href="contact" class="titresMenu">CONTACT</a></li>
+                    <li><a href="index.html" class="titresMenu">ACCUEIL</a></li>
+                    <li><a href="cv.html" class="titresMenu">CV</a></li>
+                    <li><a href="portfolio.html" class="titresMenu">PORTFOLIO</a></li>
+                    <li><a href="contact.html" class="titresMenu">CONTACT</a></li>
                 </ul>
             </nav> 
         </header>
 
 
         <main>
+            <div class="menuMobile">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
+                <nav id="menuNavMobile">
+                    <ul id="menuListeMobile">
+                        <li><a href="index.html" class="titresMenuList">ACCUEIL</a></li>
+                        <li><a href="cv.html" class="titresMenuList">CV</a></li>
+                        <li><a href="portfolio.html" class="titresMenuList">PORTFOLIO</a></li>
+                        <li><a href="contact.html" class="titresMenuList">CONTACT</a></li>
+                    </ul>
+                </nav> 
+            </div>
             <div id="infoG">
                  
-                <div id="infoGauche"></div>
-                <div id="imageCentrale"></div>
-                <div id="infoDroite"></div>
+                <img src="images/ptcv.jpg" alt="Photo de présentation" class="image">
+                <div class="texte">
+                    <h3> Age : </h3>
+                    <p>28 ans</p><br>  
+
+                    <h3> Langues : </h3>
+                    <p>Français (maternelle), Anglais (courant), Japonais (débutant) </p><br>  
+
+                    <h3> Permis B </h3> <br> 
+                    
+                    <h3> Téléphone : </h3>
+                    <p>06.29.79.70.37</p><br>
+
+                    <h3> Mail : </h3>
+                    <p>guillaume.minder@hotmail.fr</p><br>
+
+                    <h3> Domaines d'activités :</h3>
+                    <p>Je m'implique dans différents domaines d'activités: graphisme, UX/UI design et développement web. Et maitrise donc une assez vaste variété de logiciel de création et certains langage de développement que vous pourrez retrouver dans mes compétences  </p><br>  
+                    
+
+                </div>
 
             </div>
 
 
-            <div id="competence"></div>
+            <div id="competenceBloc">
+
+                <section id="competencePrincipales">
+                    <h2>Mes principales compétences :</h2><br>
+                    <p>Langage de balisage: Html/CSS<br>Javascript <br>
+                        Création de site web via CMS type
+                        WordPress<br> Photoshop<br> Illustrator<br> Indesign<br> Adobe Premiere Pro<br>Figma(maquette,UX/UI design)</p>
+                </section>
+
+                <section id="form-section">
+                    <h2>Ajouter une compétence</h2>
+                    <form id="competence-form">
+                        <label for="nom">Nom de la compétence :</label>
+                        <input type="text" id="nom" name="nom" required>
+        
+                        <label for="description">Description (facultatif) :</label>
+                        <textarea id="description" name="description"></textarea>
+        
+                        <label for="niveau">Niveau de compétence :</label>
+                        <select id="niveau" name="niveau" required>
+                            <option value="Debutant">Débutant</option>
+                            <option value="Intermediaire">Intermédiaire</option>
+                            <option value="Avance">Avancé</option>
+                        </select>
+        
+                        <button type="submit">Ajouter</button>
+                    </form>
+                </section>
+        
+                <section id="liste-section">
+                    <h2>Liste des compétences</h2>
+                    <ul id="competence-liste"></ul>
+                </section>
+
+            </div>
 
             <div id="parcours">
                
@@ -74,35 +141,47 @@
 
             <div id="interet">
 
-                <p>Centres d'intêret</p>
+                <section class="hobbies">
+                    <h2>Mes Centres d'Intérêts</h2>
+                    <div class="hobbies-grid">
+                      <div class="hobby">
+                        <img src="images/ui.webp" alt="Dessin traditionnel et numérique" />
+                        <h3>Dessin traditionnel et numérique</h3>
+                      </div>
+                      <div class="hobby">
+                        <img src="images/gaming-pc-7737628_1280.jpg" alt="Gaming" />
+                        <h3>Gaming</h3>
+                      </div>
+                      <div class="hobby">
+                        <img src="images/book-863418_1280.jpg" alt="Lecture" />
+                        <h3>Lecture</h3>
+                      </div>
+                      <div class="hobby">
+                        <img src="images/youtube-5000699_1280.png" alt="Montage vidéo" />
+                        <h3>Montage vidéo</h3>
+                      </div>
+                      <div class="hobby">
+                        <img src="images/3d-printer-3311587_1280.png" alt="Création 3D/Animation" />
+                        <h3>Création 3D/Animation</h3>
+                      </div>
+                    </div>
+                  </section>
 
             </div>
 
 
-
-
-
-
-
-
-
-
-            
-        
         
             <footer>
 
                 <div class="blocFooter">  
-                    <a href="">Mentions légales</a>
-                    <a href="">Politique de cookies</a>
-                    <a href="">Paramètres des cookies</a>
-                </div> 
-                    
+                    <a href="">Linkedin</a>
+                    <a href="">Instagram</a>
+                </div>
                 <div class="blocFooter">  
-                    <a href="index">Accueil</a>
-                    <a href="cv">CV</a>
-                    <a href="portfolio">Portfolio</a>
-                    <a href="contact">Contact</a>
+                    <a href="index.html">Accueil</a>
+                    <a href="cv.html">CV</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>  
                 </div> 
         
         
@@ -110,5 +189,98 @@
         <main>
     </div>
     
+    <script>
+
+        const formulaire = document.getElementById('competence-form');
+        const listeCompetences = document.getElementById('competence-liste');
+
+        // Charger les compétences depuis le localStorage
+        const chargerCompetences = () => {
+            const competences = JSON.parse(localStorage.getItem('competences')) || [];
+            listeCompetences.innerHTML = '';
+            competences.forEach((competence, index) => afficherCompetence(competence, index));
+        };
+
+        // Enregistrer les compétences dans le localStorage
+        const enregistrerCompetences = (competences) => {
+            localStorage.setItem('competences', JSON.stringify(competences));
+        };
+
+        // Afficher une compétence individuelle
+        const afficherCompetence = (competence, index) => {
+            const li = document.createElement('li');
+
+            const details = document.createElement('div');
+            details.innerHTML = `<strong>${competence.nom}</strong><br>${competence.description || ''}<br>Niveau : ${competence.niveau}`;
+            
+            const actions = document.createElement('div');
+            actions.classList.add('actions');
+            
+            const boutonModifier = document.createElement('button');
+            boutonModifier.textContent = 'Modifier';
+            boutonModifier.classList.add('edit');
+            boutonModifier.onclick = () => modifierCompetence(index);
+
+            const boutonSupprimer = document.createElement('button');
+            boutonSupprimer.textContent = 'Supprimer';
+            boutonSupprimer.classList.add('delete');
+            boutonSupprimer.onclick = () => supprimerCompetence(index);
+
+            actions.appendChild(boutonModifier);
+            actions.appendChild(boutonSupprimer);
+
+            li.appendChild(details);
+            li.appendChild(actions);
+            listeCompetences.appendChild(li);
+        };
+
+        // Ajouter une compétence
+        formulaire.onsubmit = (e) => {
+            e.preventDefault();
+            const nom = document.getElementById('nom').value;
+            const description = document.getElementById('description').value;
+            const niveau = document.getElementById('niveau').value;
+
+            const competences = JSON.parse(localStorage.getItem('competences')) || [];
+            competences.push({ nom, description, niveau });
+            enregistrerCompetences(competences);
+            chargerCompetences();
+            formulaire.reset();
+        };
+
+        // Modifier une compétence
+        const modifierCompetence = (index) => {
+            const competences = JSON.parse(localStorage.getItem('competences'));
+            const competence = competences[index];
+
+            document.getElementById('nom').value = competence.nom;
+            document.getElementById('description').value = competence.description;
+            document.getElementById('niveau').value = competence.niveau;
+
+            competences.splice(index, 1);
+            enregistrerCompetences(competences);
+            chargerCompetences();
+        };
+
+        // Supprimer une compétence
+        const supprimerCompetence = (index) => {
+            const competences = JSON.parse(localStorage.getItem('competences'));
+            competences.splice(index, 1);
+            enregistrerCompetences(competences);
+            chargerCompetences();
+        };
+
+        // Initialiser
+        chargerCompetences();
+
+        const menuNavMobile = document.getElementById("menuNavMobile");
+           const burger = document.getElementById("hamburger"); 
+   
+           burger.addEventListener("click", function() {  
+               console.log("Menu clicked!");
+               menuNavMobile.classList.toggle("menuMobileActif");
+           });
+   
+    </script>
 </body>
 </html>
