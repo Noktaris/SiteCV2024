@@ -21,7 +21,7 @@ Il doit être développer en HTML/CSS/Javascript. Une partie javascript de se pr
 git clone https://github.com/Noktaris/SiteCV2024.git
 
 ```
-
+Les urls sont modifiées par le fichier .htaccess, si une consultation en local du site est voulu vous pouvez le supprimer et faire la réécriture des href des menus de chaque pages modifiés, index deviendra index.html, cv cv.html...Sans quoi la navigation ne sera pas possible.
 ---
 
 # Lien vers la version en ligne hébergé sur GitHub Pages

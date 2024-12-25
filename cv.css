@@ -194,7 +194,22 @@ main{
     
 }
 
+#competencePrincipales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#competencePrincipales h2{
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+#competencePrincipales p{
+    font-size: 1.5rem;
+    line-height: 2.3;
+}
 
 section {
     margin-bottom: 2rem;
@@ -275,6 +290,7 @@ input,textarea, se{
 .actions button:hover {
     opacity: 0.8;
 }
+
 
 
 /* fin bloc Compétences*/
@@ -465,7 +481,15 @@ input,textarea, se{
     }
   
     /* MENU BURGER fin */
-  
+    #competencePrincipales h2{
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+    
+    #competencePrincipales p{
+        font-size: 1.2rem;
+        line-height: 2.3;
+    }
   }
   /* Media queries for smaller screens */
   
@@ -543,6 +567,15 @@ input,textarea, se{
 
     .hobbies .hobbies-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    #competencePrincipales h2{
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+    }
+    
+    #competencePrincipales p{
+        font-size: 1rem;
+        line-height: 2.3;
     }
 }
 
