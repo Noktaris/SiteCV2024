@@ -62,10 +62,10 @@
                     </ul>
                 </nav> 
             </div>
-            <div id="infoG">
+            <div id="infoG" itemscope itemtype="http://schema.org/Person">
                  
-                <img src="images/ptcv.jpg" alt="Photo de présentation" class="image">
-                <div class="texte">
+                <img src="images/ptcv.jpg" alt="Photo de présentation" class="image" itemprop="image">
+                <div class="texte" itemprop="text">
                     <h3> Age : </h3>
                     <p>28 ans</p><br>  
 
@@ -91,42 +91,42 @@
 
             <div id="competenceBloc">
 
-                <section id="competencePrincipales">
+                <section id="competencePrincipales" itemscope itemtype="http://schema.org/Skills">
                     <h2 itemprop="title">Mes principales compétences :</h2><br>
                     <ul>
-                        <li><p>Langage de balisage: Html/CSS</p></li>
-                        <li><p>Javascript </p></li>
-                        <li><p>Création de site web via CMS type WordPress</p></li>
-                        <li><p>Photoshop</p></li>
-                        <li><p>Illustrator</p></li>
-                        <li><p>Indesign</p></li>
-                        <li><p>Adobe Premiere Pro</p></li>
-                        <li><p>Figma(maquette,UX/UI design)</p></li>
+                        <li><p itemprop="text">Langage de balisage: Html/CSS</p></li>
+                        <li><p itemprop="text">Javascript </p></li>
+                        <li><p itemprop="text">Création de site web via CMS type WordPress</p></li>
+                        <li><p itemprop="text">Photoshop</p></li>
+                        <li><p itemprop="text">Illustrator</p></li>
+                        <li><p itemprop="text">Indesign</p></li>
+                        <li><p itemprop="text">Adobe Premiere Pro</p></li>
+                        <li><p itemprop="text">Figma(maquette,UX/UI design)</p></li>
                     </ul>
                     
                 </section>
 
-                <section id="form-section">
-                    <h2 itemprop="title">Ajouter une compétence</h2>
+                <section id="form-section" itemscope itemtype="http://schema.org/Skills">
+                    <h2 itemprop="title" itemprop="title">Ajouter une compétence</h2>
                     <form id="competence-form">
-                        <label for="nom">Nom de la compétence :</label>
+                        <label for="nom" itemprop="text">Nom de la compétence :</label>
                         <input type="text" id="nom" name="nom" required>
         
-                        <label for="description">Description (facultatif) :</label>
+                        <label for="description" itemprop="text">Description (facultatif) :</label>
                         <textarea id="description" name="description"></textarea>
         
-                        <label for="niveau">Niveau de compétence :</label>
+                        <label for="niveau" itemprop="text">Niveau de compétence :</label>
                         <select id="niveau" name="niveau" required>
-                            <option value="Debutant">Débutant</option>
-                            <option value="Intermediaire">Intermédiaire</option>
-                            <option value="Avance">Avancé</option>
+                            <option value="Debutant" itemprop="text">Débutant</option>
+                            <option value="Intermediaire" itemprop="text">Intermédiaire</option>
+                            <option value="Avance" itemprop="text">Avancé</option>
                         </select>
         
-                        <button type="submit">Ajouter</button>
+                        <button type="submit" itemprop="text">Ajouter</button>
                     </form>
                 </section>
         
-                <section id="liste-section">
+                <section id="liste-section" itemscope itemtype="http://schema.org/Skills">
                     <h2 itemprop="title">Liste des compétences</h2>
                     <ul id="competence-liste"></ul>
                 </section>
@@ -135,39 +135,39 @@
 
             <div id="parcours">
                
-                <div id="parcoursGauche">
+                <div id="parcoursGauche" itemscope itemtype="http://schema.org/EducationEvent">
                     <h2 class="titre" itemprop="title">Expérience Professionnelle</h2><br><br><br>
                     <h3>Mars 2025</h3>
-                    <p>Stage de X semaines en web design chez X</p><br><br><br>
+                    <p itemprop="text">Stage de X semaines en web design chez X</p><br><br><br>
 
                     <h3>2022-2024</h3>
-                    <p>Enseignant titulaire 1er Degré</p><br><br><br>
+                    <p itemprop="text">Enseignant titulaire 1er Degré</p><br><br><br>
 
                     <h3>2020-2022</h3>
-                    <p>Stage d'enseignement au sein du Master MEEF</p><br><br><br>
+                    <p itemprop="text">Stage d'enseignement au sein du Master MEEF</p><br><br><br>
 
                     <h3>2018-2019</h3>
-                    <p>Stage en psychologie, EHPAD Nazareth </p><br><br><br>
+                    <p itemprop="text">Stage en psychologie, EHPAD Nazareth </p><br><br><br>
                 </div>
 
-                <div id="parcoursDroit">
+                <div id="parcoursDroit" itemscope itemtype="http://schema.org/EducationEvent">
                     <h2 class="titre" itemprop="title">Formation</h2><br><br><br>
                     <h3>2024-2025</h3>
-                    <p>Licence Professionnelle CRRW (Création Réalisation et Rédaction Web),<br> EISINE Charleville-Mézières</p><br><br><br>
+                    <p itemprop="text">Licence Professionnelle CRRW (Création Réalisation et Rédaction Web),<br> EISINE Charleville-Mézières</p><br><br><br>
 
                     <h3>2020-2022</h3>
-                    <p>Master MEEF 1er degré (Métiers de l'Enseignement de l'Éducation et de la Formation),<br> URCA, Reims</p> <br><br><br>
+                    <p itemprop="text">Master MEEF 1er degré (Métiers de l'Enseignement de l'Éducation et de la Formation),<br> URCA, Reims</p> <br><br><br>
 
                     <h3>2016-2020</h3>
-                    <p>Licence de Psychologie, URCA, Reims</p><br><br><br>
+                    <p itemprop="text">Licence de Psychologie, URCA, Reims</p><br><br><br>
 
                     <h3>2014</h3>
-                    <p>Bac Scientifique, Lycée Edouard Herriot</p>
+                    <p itemprop="text">Bac Scientifique, Lycée Edouard Herriot</p>
                 </div>
 
             </div>
 
-            <div id="interet">
+            <div id="interet" itemscope itemprop="http://schema.org/Interest">
 
                 <section class="hobbies">
                     <h2 itemprop="title">Mes Centres d'Intérêts</h2>
